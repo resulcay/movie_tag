@@ -25,9 +25,12 @@ void main() {
               const SizedBox(
                 height: 20,
               ),
-              Image.asset(
-                'images/avatar.png',
-                scale: 1,
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20.0),
+                child: Image.asset(
+                  'images/avatar.png',
+                  scale: 1,
+                ),
               )
             ],
           ),
